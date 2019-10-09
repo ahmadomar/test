@@ -7,7 +7,7 @@ script:
   - docker images mannydesigns/node
 
 before_deploy: 
-  - docker login -U ahomar -p 2^6G8[GZbAC%)HxSV#
+  - docker login -U ahomar -P A12345678
 
 deploy: 
   provider: script
