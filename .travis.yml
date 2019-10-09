@@ -7,7 +7,7 @@ script:
   - docker images ahmeddesigns/node
 
 before_deploy: 
-  - docker login -u ahomar -p A12345678
+  - docker login -u "Username" -p "Password"
 
 deploy: 
   provider: script
