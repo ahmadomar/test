@@ -5,4 +5,12 @@ services:
 script:
   - docker build -t mannydesigns/node .
   - docker images mannydesigns/node
-  
+
+before_deploy: 
+  - docker login -U ahomar -p 2^6G8[GZbAC%)HxSV#
+
+deploy: 
+  provider: script
+  script: docker push mannydesigns/node
+  on:
+    branch: master
